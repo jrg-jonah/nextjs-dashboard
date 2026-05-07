@@ -20,7 +20,6 @@ export default async function Page() {
                  <Suspense fallback={<RevenueChartSkeleton />}>
                    <RevenueChart />
                  </Suspense>
-                 {/* @ts-expect-error Async Server Component */}
                 <Suspense fallback={<LatestInvoicesSkeleton />}>
                     <LatestInvoices />
                 </Suspense>
